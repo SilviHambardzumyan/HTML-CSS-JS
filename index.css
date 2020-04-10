@@ -1,0 +1,36 @@
+body, html {
+  margin: 0;
+}
+
+#course {
+  background-color: lavender;
+  width: 300pc;
+}
+
+#course span {
+  font-weight: bold;
+  color: darkblue;
+}
+
+#grades {
+  background-color: lavender;
+  width: 300pc;
+}
+
+#grades span {
+  font-weight: bold;
+  color: darkblue;
+}
+
+#grades input {
+  -moz-user-input: 
+}
+#totalgrade {
+  background: lavender;
+  width: 300pc;
+}
+
+#totalgrade span {
+  font-weight: bold;
+  color: darkblue;
+}
