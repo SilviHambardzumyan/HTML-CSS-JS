@@ -21,6 +21,6 @@ function calculatetotalgrade() {
   
   var calculatetotalgrade = participation + hw + quiz + pm1 + pm2
 
-  var totalgrade = document.getElementById("totalgrade").innerHTML;
+  document.getElementById("totalgrade").innerHTML = calculatetotalgrade;
   
 } 
