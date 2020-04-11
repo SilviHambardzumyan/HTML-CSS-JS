@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
@@ -32,10 +32,12 @@
         <li>Project M1 Grade <input type="text" value=100 id="pm1Grade"></li>
         <li>Project M2 Grade <input type="text" value=100
         id="pm2Grade"></li>
-        <h2> <small> Total Grade </small> </h2> 
-        <li> <button onclick="calculatetotalgrade()"> <id="totalgrade"> Calculate </button> </li> 
+        <li> <button onclick="calculatetotalgrade()"> Calculate </button> </li> 
+        <h2> <small> Total Grade: </small> </h2> 
+          <span id="totalgrade"></span>
+
       </ul>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
