@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div id="course">
+      <h1>CSE120 - Intro to programming </h1>
+      <ul style="list-style-type:disc;">
+        <li>Participation - <span class="percent"
+        id="participationPercent">10</span>%</li>
+        <li>HW -  <span class="percent"
+        id="hwPercent">20</span>%</li>
+        <li>Quiz - <span class="percent" id="quizPercent">10</span>%</li>
+        <li>Project M1 - <span class="percent"
+        id="pm1Percent">25</span>%</li>
+        <li>Project M2 - <span class="percent"
+        id="pm2Percent">35</span>%</li>
+      </ul>
+    </div>
+
+    <div id="grades">
+      <h1> Current Grade </h1>
+      <ul style="list-style-type:disc;">
+        <li>Participation Grade <input type="text" value=100 id="participationGrade"></li>
+        <li>HW Grade <input type="text" value=100 id="hwGrade"></li>
+        <li>Quiz Grade <input type="text" value=100 id="quizGrade"></li>
+        <li>Project M1 Grade <input type="text" value=100 id="pm1Grade"></li>
+        <li>Project M2 Grade <input type="text" value=100
+        id="pm2Grade"></li>
+        <li> <button onclick="calculatetotalgrade()"> Calculate </button> </li> 
+        <h2> <small> Total Grade: </small> </h2> 
+          <span id="totalgrade"></span>
+
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
