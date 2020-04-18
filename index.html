@@ -5,39 +5,54 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
   </head>
   <body>
 
-    <div id="course">
-      <h1>CSE120 - Intro to programming </h1>
-      <ul style="list-style-type:disc;">
-        <li>Participation - <span class="percent"
-        id="participationPercent">10</span>%</li>
-        <li>HW -  <span class="percent"
-        id="hwPercent">20</span>%</li>
-        <li>Quiz - <span class="percent" id="quizPercent">10</span>%</li>
-        <li>Project M1 - <span class="percent"
-        id="pm1Percent">25</span>%</li>
-        <li>Project M2 - <span class="percent"
-        id="pm2Percent">35</span>%</li>
-      </ul>
-    </div>
+  <div id="course">
+    <h1>Introduction to World of Programming<br>
+    CSE120 </h1>
+    <h2> Grading Scheme </h2>
+ 
+  <div id="grades">
+    <table>
+    <tr>
+      <td> Participation </td>
+      <td> <span class="percent"
+      id= "participationPercent">10</span>% </td>
+      <td> <input type="number" id="participationGrade" value="" onkeyup="checkGrade(event)">
+     <span id="MyParticipationHint"></span> </td>
+    </tr>
+    <tr>
+      <td> Homework </td>
+      <td> <span class="percent" id="hwPercent">10</span>% </td>
+      <td> <input type="number" id="hwGrade" value="" onkeyup="checkGrade(event)">
+      <span id="MyParticipationHint"></span> </td>
+    </tr>
+    <tr>
+      <td> Quiz </td>
+      <td> <span class="percent" id="quizPercent">20</span>% </td>
+      <td> <input type="number" id="quizGrade" value="" onkeyup="checkGrade(event)" >
+      <span id="MyParticipationHint"> </span> </td>
+    </tr>
+    <tr>
+      <td> Project M1 </td>
+      <td> <span class="percent" id="pm1Percent">25</span>% </td>
+      <td> <input type="number" id="pm1Grade" 
+      value="" onkeyup="checkGrade(event)" >
+      <span id="MyParticipationHint"> </span> </td>
+    </tr>
+    <tr>
+      <td> Project M2 </td>
+      <td> <span class="percent" id="pm2Percent">35</span>%
+      <td> <input type="number" id="pm2Grade"  value="" onkeyup="checkGrade(event)" >
+      <span id="MyParticipationHint"> </span> </td>
+    </tr>
+    </table>
+    <br>
+    <button onclick="calculatetotalgrade()"> Calculate </button>
+   <h2> Total Grade: <span id="totalgrade"> </span> </h2> 
 
-    <div id="grades">
-      <h1> Current Grade </h1>
-      <ul style="list-style-type:disc;">
-        <li>Participation Grade <input type="text" value=100 id="participationGrade"></li>
-        <li>HW Grade <input type="text" value=100 id="hwGrade"></li>
-        <li>Quiz Grade <input type="text" value=100 id="quizGrade"></li>
-        <li>Project M1 Grade <input type="text" value=100 id="pm1Grade"></li>
-        <li>Project M2 Grade <input type="text" value=100
-        id="pm2Grade"></li>
-        <li> <button onclick="calculatetotalgrade()"> Calculate </button> </li> 
-        <h2> <small> Total Grade: </small> </h2> 
-          <span id="totalgrade"></span>
-
-      </ul>
-    </div>
-    <script src="script.js"></script>
-  </body>
+  </div>  
+</body>
 </html>
