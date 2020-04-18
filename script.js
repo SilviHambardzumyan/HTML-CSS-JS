@@ -1,3 +1,14 @@
+function checkGrade(evt) {
+
+  var grade=parseFloat(evt.currentTarget.value);
+  if (grade > 100 || grade < 0) {
+    evt.currentTarget.style.color="red"
+  } else {
+    evt.currentTarget.style.color="black"
+  }
+
+}
+
 function calculatetotalgrade() {
 
   var participationPercent = parseInt (document.getElementById("participationPercent").innerHTML)
@@ -5,7 +16,6 @@ function calculatetotalgrade() {
   var quizPercent = parseInt (document.getElementById("quizPercent").innerHTML)
   var pm1Percent = parseInt (document.getElementById("pm1Percent").innerHTML)
   var pm2Percent = parseInt (document.getElementById("pm2Percent").innerHTML)
-
 
   var participationGrade = parseFloat(document.getElementById("participationGrade").value)
   var hwGrade = parseFloat(document.getElementById("hwGrade").value)
