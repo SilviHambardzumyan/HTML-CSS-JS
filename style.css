@@ -4,17 +4,10 @@ body, html {
 
 #course {
   background-color: lavender;
-  width: 300pc;
-}
-
-#course span {
-  font-weight: bold;
-  color: darkblue;
 }
 
 #grades {
   background-color: lavender;
-  width: 300pc;
 }
 
 #grades span {
@@ -22,15 +15,11 @@ body, html {
   color: darkblue;
 }
 
-#grades input {
-  -moz-user-input: 
-}
-#totalgrade {
-  background: lavender;
-  width: 300pc;
+#grades h2 span { 
+  font-weight: bold; 
+  color: red;
 }
 
-#totalgrade span {
-  font-weight: bold;
-  color: darkblue;
+tr {
+  color: black;
 }
